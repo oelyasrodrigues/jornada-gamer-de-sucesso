@@ -1,0 +1,93 @@
+.fourth-section{
+  background: var(--logo-gradient);
+  height: 368px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 77px;
+  padding: 20px 40px;
+}
+.fourth-section h2{
+  width: 503px;
+  font-size: 52px;
+  line-height: 52px;
+  font-weight: 600;
+  color: var(--black);
+}
+.fourth-section a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 483px;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+@media (max-width: 1280px){
+  .fourth-section h2{
+    width: 460px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .fourth-section a{
+    font-size: 28px;
+  }
+}
+@media (max-width: 1100px){
+  .fourth-section{
+    gap: 50px;
+  }
+  .fourth-section h2{
+    width: 405px;
+    font-size: 42px;
+    line-height: 38px;
+  }
+  .fourth-section a{
+    font-size: 28px;
+    width: 420px;
+  }
+}
+
+@media (max-width: 950px){
+  .fourth-section h2{
+    width: 370px;
+    font-size: 39px;
+    line-height: 34px;
+  }
+  .fourth-section a{
+    font-size: 28px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 831px){
+  .fourth-section{
+    flex-direction: column;
+  }
+  .fourth-section a{
+    font-size: 28px;
+    width: 370px;
+  }
+}
+@media (max-width: 385px){
+  .fourth-section{
+    gap: 40px;
+    padding: 0px 10px;
+    align-items: start;
+
+  }
+  .fourth-section h2{
+    max-width: 300px;
+    width: 100%;
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 700;
+  }
+  .fourth-section a{
+    font-size: 22px;
+    max-width: 370px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,219 @@
+.first-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+
+}
+.first-section .text-form{
+  max-width: 590px;
+  width: 100%;
+}
+.first-section .logo{
+  width: 290px;
+  margin-bottom: 40px;
+}
+.first-section .text-form .text-area .title {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.first-section .text-form .text-area .subtitle {
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 463px;
+  width: 100%;
+  font-weight: 400;
+}
+
+.first-section .text-form .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 483px;
+  width: 100%;
+}
+
+.first-section .text-form .form input {
+  max-width: 483px;
+  width: 100%;
+  margin-top: 32px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 32px;
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 400;
+}
+.first-section .text-form .form input::placeholder{
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 400;
+}
+#formBtn{
+  margin-bottom: 40px;
+}
+
+.first-section .img-area{
+  max-width: 650px;
+  width: 100%;
+  margin-bottom: -4px;
+}
+.first-section .img-area .gamer-img{
+  width: 100%;
+}
+
+@media (max-width: 1280px){
+  .first-section .text-form .text-area .title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .first-section .text-form .text-area .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 400px;
+  }
+  .first-section .text-form .form input{
+    max-width: 410px;
+  }
+  .first-section .text-form .form button{
+    max-width: 410px;
+    font-size: 28px;
+    
+  }
+
+}
+
+@media (max-width: 1100px){
+  .first-section .text-form .text-area .title {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .first-section .text-form .text-area .subtitle {
+    font-size: 17px;
+    line-height: 22px;
+    max-width: 380px;
+  }
+  .first-section .text-form .form input{
+    max-width: 380px;
+    font-size: 20px;
+  }
+  .first-section .text-form .form input::placeholder{
+    font-size: 20px;
+  }
+  .first-section .text-form .form button{
+    max-width: 380px;
+    font-size: 24px;
+    
+  }
+
+}
+
+@media (max-width: 950px){
+  .first-section .text-form .text-area .title {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .first-section .text-form .text-area .subtitle {
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 327px;
+  }
+  .first-section .text-form .form{
+    gap: 10px;
+  }
+  .first-section .text-form .form input{
+    max-width: 327px;
+    height: 70px;
+    font-size: 18px;
+  }
+  .first-section .text-form .form input::placeholder{
+    font-size: 18px;
+  }
+  .first-section .text-form .form button{
+    max-width: 327px;
+    height: 70px;
+    font-size: 20px;
+    
+  }
+  
+}
+
+@media (max-width: 865px){
+  .first-section .text-form .text-area .title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .first-section .text-form .logo{
+    margin-bottom: 20px;
+  }
+  .first-section .text-form .text-area .subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 280px;
+  }
+  .first-section .text-form .form input{
+    max-width: 280px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .first-section .text-form .form input::placeholder{
+    font-size: 16px;
+  }
+  .first-section .text-form .form button{
+    max-width: 280px;
+    font-size: 18px;
+    height: 60px;
+  }
+
+}
+
+@media (max-width: 831px){
+  
+  .first-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+  .first-section .text-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+  }
+  .first-section .text-form .text-area .title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+
+  .first-section .img-area{
+    margin-bottom: -40px;
+    max-width: 400px;
+  }
+ 
+}
+
+@media (max-width: 375px){
+  .first-section .text-form .logo{
+    width: 270px;
+  }
+  .first-section .text-form .text-area .title {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  
+}
+@media (max-width: 350px){
+  .first-section .text-form .text-area .title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .first-section .text-form form input,
+  .first-section .text-form form button{
+    min-width: 90%;
+  }
+}

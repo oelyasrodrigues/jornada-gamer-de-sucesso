@@ -1,0 +1,117 @@
+.aleatoria{
+  margin-bottom: 120px;
+}
+.second-section .title-area{
+  display: flex
+}
+.second-section .title-area .title {
+  font-size: 64px;
+  line-height: 64px;
+  width: 610px;
+  font-weight: 600;
+}
+.second-section .cards-grid{
+  margin-top: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.second-section .cards-grid .card{
+  position: relative;
+  width: 367px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 84px 40px 60px 40px;
+}
+.second-section .cards-grid .card img{
+  position: absolute;
+  top: -38px;
+  background: var(--logo-gradient);
+  border-radius: 6px;
+  padding: 8px;
+  width: 80px;
+  height: 80px;
+}
+.second-section .cards-grid .card h2{
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.second-section .cards-grid .card p{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@media (max-width: 1280px){
+  .second-section .title-area .title {
+    font-size: 48px;
+    line-height: 48px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 1100px){
+  .second-section .title-area .title {
+    font-size: 44px;
+    width: 450px;
+  }
+  .second-section .cards-grid{
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+}
+
+@media (max-width: 950px){
+  .second-section .title-area .title{
+    font-size: 38px;
+    line-height: 38px;
+    width: 360px;
+  }
+}
+@media (max-width: 865px){
+  .second-section .title-area .title{
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 831px){
+  .aleatoria{
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+  }
+  .second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-section .title-area .title{
+    width: 100%;
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 380px){
+  .second-section .title-area .title{
+    font-size: 31px;
+    line-height: 32px;
+  }
+  .second-section .cards-grid .card{
+    max-width: 367px;
+    width: 100%;
+    padding: 70px 30px 60px 30px;
+    height: auto;
+  }
+  .second-section .cards-grid .card h2{
+    font-size: 28px;
+  }
+  .second-section .cards-grid .card p{
+    font-size: 18px;
+
+  }
+}

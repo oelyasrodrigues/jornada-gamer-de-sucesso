@@ -1,0 +1,107 @@
+.fifth-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.fifth-section .gamer-img{
+  max-width: 620px;
+  width: 100%;
+}
+
+.fifth-section .text-area{
+  max-width: 560px;
+  width: 100%;
+}
+.fifth-section .text-area .title{
+  width: 560px;
+  font-size: 54px;
+  line-height: 54px;
+  margin-bottom: 16px;
+}
+.fifth-section .text-area p{
+  font-size: 20px;
+  line-height: 28px;
+}
+.fifth-section .text-area p:not(:last-child){
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1280px){
+  .fifth-section .text-area .title{
+    width: 480px;
+    font-size: 64px;
+    line-height: 60px;
+  }
+  .fifth-section .text-area p{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .fifth-section .text-area p:not(:last-child){
+    margin-bottom: 16px;
+  }
+  .fifth-section .gamer-img{
+    margin-left: -70px;
+  }
+}
+
+@media (max-width: 1100px){
+  .fifth-section .text-area .title{
+    font-size: 44px;
+    line-height: 40px;
+
+  }
+  .fifth-section .text-area{
+    max-width: 405px;
+  }
+  .fifth-section .text-area .title{
+    width: 405px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+  .fifth-section .gamer-img{
+    margin-left: -40px;
+  }
+}
+@media (max-width: 950px){
+  .fifth-section .text-area{
+    max-width: 350px;
+  }
+  .fifth-section .text-area .title{
+    width: 350px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .fifth-section .text-area p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .fifth-section .text-area p:not(:last-child){
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 831px){
+  .fifth-section{
+    flex-direction: column;
+  }
+  .fifth-section .gamer-img{
+    max-width: 400px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 350px){
+  .fifth-section .text-area{
+    max-width: 350px;
+  }
+  .fifth-section .text-area .title{
+    width: 100%;
+    font-size: 34px;
+    line-height: 30px;
+  }
+  .fifth-section .gamer-img{
+    margin-left: -10px;
+  }
+}

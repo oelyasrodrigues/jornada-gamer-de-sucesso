@@ -1,0 +1,116 @@
+:root {
+  --black: #000;
+  --blue-violet: #7D38B3;
+  --blue: #69D9FE;
+  --pink: #E1227F;
+  --white: #fdfdfd;
+  --logo-gradient: linear-gradient(262.6deg, #7C38B2 -37.81%, #69D9FE 64.17%);
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb{
+  background: #868686;
+  border-radius: 40px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat ,sans-serif;
+  color: var(--white);
+  user-select: none;
+}
+body{
+  background: var(--black);
+}
+
+.gradient{
+  background: var(--logo-gradient); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.container {
+  padding: 50px 70px 0px 70px;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+.btn{
+  max-width: 483px;
+  width: 100%;
+  height: 80px;
+  left: 390px;
+  top: 702.32px;
+  font-size: 32px;
+  font-weight: 500;
+  border-bottom-right-radius: 60px ;
+  border: none;
+  cursor: pointer; 
+  background-image: linear-gradient(45deg, var(--pink) 50%, transparent 50%);
+  background-position: 0;
+  background-size: 400%;
+  transition: background .5s ease-in-out;
+}
+.btn:hover{
+  background-position: 100%;
+  background-color: #7C38B2;
+}
+.division{
+  height: 6px;
+  background-image: var(--logo-gradient);
+  overflow: hidden;
+}
+.division div{
+  width: 400px;
+  background-color: var(--blue);
+  height: 20px;
+  animation: animate 8s infinite;
+}
+@keyframes animate {
+  0%{
+    transform: translateX(-50%);
+  }
+  50%{
+    transform: translateX(350%);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+
+footer div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  height: 110px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 50px 40px 0px 40px;
+  }
+}
+@media (max-width: 831px){
+  .container {
+    padding: 30px 10px 0px 10px;
+  }
+}
+@media (max-width: 350px){
+  footer div{
+    text-align: center;
+    font-size: 14px;
+  }
+}
